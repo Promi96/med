@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+
+    <!-- Icon header link -->
+    <link rel="icon" href="ICONS/favicon.ico">
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- css animate link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+     <!-- Bootsrap CDN links -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+     
+     <!-- w3 school link -->
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     
+     <!-- icon links -->
+     <script src="https://kit.fontawesome.com/e8e6eba5d5.js" crossorigin="anonymous"></script>
+     
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oooh+Baby&family=Pushster&display=swap" rel="stylesheet">
+     
+     </head>
+     <body>
+        <!-- topbar start -->
+        <section id="topbar" class="d-none d-lg-block topNav" style="height:35px;">
+            <div class="container d-flex">
+                <div class="contact-info mr-auto">
+                    <i class="fas fa-envelope"></i><a href="mailto:promidas96@gmail.com">promidas96@gmail.com</a>
+                    <i class="fas fa-phone"></i> +1 5589 55488 55
+                </div>
+                <div class="socials">
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="skype"><i class="fab fa-skype"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- topbar end -->
+
+        <!-- navbar start -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top navbar-inverse affix-top">
+                <div class="container">
+                <img class="logo" src="images/logo.png">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger animate__animated animate__flash animate__infinite	infinite animate__slower	7s" href="#about">ABOUT US</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger animate__animated animate__flash animate__infinite	infinite animate__slower	7s" href="#services">SERVICES</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger animate__animated animate__flash animate__infinite	infinite animate__slower	7s" href="#department">DEPARTMENT</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger animate__animated animate__flash animate__infinite	infinite animate__slower	7s" href="#medical">MEDICAL TEAM</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger animate__animated animate__flash animate__infinite	infinite animate__slower	7s" href="#news">LATEST NEWS</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger animate__animated animate__flash animate__infinite	infinite animate__slower	7s" href="#contact">CONTACT US</a>
+                      </li>
+                      </ul>
+                    </div>
+            </div>
+            </nav>
+            <!-- navbar end -->
+      
+            <!-- form start-->
+            <div class="forms">
+              <div class="inside">
+                <form class="forma" action="/file.html" name="userform" method ="post" onsubmit="return formData()">
+                  <h2 class="appoint">MAKE AN APPOINTMENT</h2>
+                  <div class="input-container">
+                    
+                    <input class="input-field" type="text" id="fname" name="Firstname" placeholder="Your name" required><br>
+                   
+                  </div>
+                 
+                  <div class="input-container">
+                    
+                    <input class="input-field" type="text" id="eid" name="emailid" placeholder="Your email id" required><br>
+                  </div>
+            
+                  <div class="input-container">
+                    
+                    <input class="input-field" type="text" id="phone" name="Phoneno" placeholder="Your Phone no" required><br>
+                  </div>
+            
+                <div class="input-container">
+                  <input class="input-field" type="text" id="message" name="Message" placeholder="Your message"><br>
+                  </div>
+                  <button type="submit" class="btn">Register</button>
+                </form>
+            
+            
+              </div>
+            </div>
+            
+            
+
+          <!-- form end -->
+
+          <!-- about us start -->
+          
+          
+<section class="about-us" id="about">
+  <div class="heading ">
+    <h1 class="heading1 animate__animated animate__bounce animate__infinite	infinite">Welcome to the Med Center </h1>
+    <p class="note">Largest network of the world’s finest and brightest medical experts <br> who provide compassionate care using outstanding expertise and advanced technology.</p>
+  </div>
+  <div class="card-group">
+  <div class="card">
+    <div class="row">
+
+        <div class="col-md-6 col-sm-12">
+            <img class="card-img" src="images/doctor2.jpg">
+        </div>
+
+
+      <div class="col-md-6 col-sm-12">
+        <div class="card-body">
+          <h4 class="card-title">We are expert in the field of medical! total health care</h4>
+          <p class="writepara">Since our foundation in 2005 our goal has been to use digital technology to create experiences with a deeper impact.</p>
+          <p class="writepara">The facility brings together an expert team of superspecialist doctors who work together with a compassionate nursing staff to provide patients accurate diagnosis and medical care.The hospital has high-end technological infrastructure and medical facilities.</p>
+        </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+</section>
+
+     <!-- services start -->
+
+     <section class="service" id="services">
+      <div class="content">
+        <h1 class="heading2 animate__animated animate__bounce animate__infinite	infinite">Why Choose Us</h1>
+        <p class="note1">We have a team of highly qualified and experienced cardiologists, interventional cardiologists <br> standard dummy text ever since the 1500s,
+          and cardiac surgeons <br>who provide comprehensive care for a wide range of cardiac conditions for all ages.</p>
+      </div>
+    
+      <div class="content2">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="img-part" ><img src="images/doctor.png" alt=""></div>
+            <h3 class="point">Professional Doctors</h3>
+            <p class="point1">A robust feedback mechanism that has all the listening and learning ports available to capture Patient feedback from all touch points.</p>
+          </div>
+    
+          <div class="col-md-3 col-sm-6">
+          <div class="img-part"><img  src="images/blood bank.png" alt=""></div>
+    
+    
+            <h3 class="point">Exclusive Blood Bank</h3>
+            <p class="point1">A dedicated team of Health care professionals who are trained & quipped to provide assistance to Patients.</p>
+          </div>
+    
+          <div class="col-md-3 col-sm-6">
+            <div class="img-part"><img  src="images/medicine.png" alt=""></div>
+            <h3 class="point">Internal Medicine</h3>
+            <p class="point1">1005 Critical to Customer Standards developed for In- Patients/ Out- Patients/ Personalized Health Check-up/ Facility Management </p>
+          </div>
+    
+          <div class="col-md-3 col-sm-6">
+            <div class="img-part"><img src="images/emergency.png" alt=""></div>
+            <h3 class="point">Emergency services</h3>
+            <p class="point1">A unique innovation designed to increase nursing bandwidth to spread more quality time with the Patient.Every request is tracked against an SLA to improve Service Efficiencies</p>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+    <!-- services end -->
+
+    <!-- department start -->
+
+    <section class="dept" id="department">
+      <div class="content3">
+        <h1 class="heading3 animate__animated animate__bounce animate__infinite	infinite">Our Departments</h1>
+        <p class="note2">The Group takes care of around 4.5 lakh patients annually, conducting more than 15,000 successful surgeries,<br> with a roster of more than 5,000 healthcare professionals.An impressive roster of more than 600 doctors <br> and a well-trained force of nursing staff work tirelessly across more than 1,000 beds across its four hospitals, backed by advanced technologies.</p>
+      
+      </div>
+     
+      <div class="w3-bar ">
+        <button class="w3-bar-item w3-button" onclick="openCity('London')">DENTAL CARE</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Paris')">HEART DISEASE</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">GENERAL TREATMENT</button>
+      </div>
+    <div id="London" class="w3-container w3-display-container city">
+      <div class="card-group">
+      <div class="card">
+        <div class="row">
+    
+            <div class="col-md-6 col-sm-12">
+                <img class="card-img" src="images/dental.jpg" alt="Card image cap">
+            </div>
+    
+    
+          <div class="col-md-6 col-sm-12">
+            <div class="card-body">
+              <h4 class="card-title">We are expert in the field of medical! total health care</h4>
+              <p class="writepara">About 80% of the Government health care services to the citizens are being provided free of cost.</p>
+              <p class="writepara">For many people, the pain, potential embarrassment, and experience of seeing blood coming from the buttocks can be emotionally traumatic, causing them to suffer in silence rather than seeking treatment.</p>
+            </div>
+        </div>
+    
+      </div>
+    
+      </div>
+    
+      </div>
+    </div>
+    
+    
+    
+    
+    <div id="Paris" class="w3-container w3-display-container city"style="display:none" >
+      <div class="card-group">
+      <div class="card">
+        <div class="row">
+    
+            <div class="col-md-6 col-sm-12">
+                <img class="card-img" src="images/heart.jpg" alt="Card image cap">
+            </div>
+    
+    
+          <div class="col-md-6 col-sm-12">
+            <div class="card-body">
+              <h4 class="card-title">We are expert in the field of medical! total health care</h4>
+              <p class="writepara">Public health, sanitation and hospitals are the exclusive responsibilities of the State.</p>
+              <p class="writepara">State provides financial and managerial support for the basic health care support and infrastructural facilities at the rural level, while the State level super specialty Medical Colleges & Hospitals predominantly provides the ambulatory care services.</p>
+            </div>
+        </div>
+    
+      </div>
+    
+      </div>
+    
+      </div>
+    </div>
+    <div id="Tokyo" class="w3-container w3-display-container city" style="display:none">
+    
+    
+      <div class="card-group">
+      <div class="card">
+        <div class="row">
+    
+            <div class="col-md-6 col-sm-12">
+                <img class="card-img" src="images/general.jpg">
+            </div>
+    
+    
+          <div class="col-md-6 col-sm-12">
+            <div class="card-body">
+              <h4 class="card-title">We are expert in the field of medical! total health care</h4>
+              <p class="writepara">The team is expert in off-pump CABG, robotic heart surgery, and minimally invasive valve and coronary heart bypass techniques.</p>
+              <p class="writepara" >Many of our doctors are also ‘Padma Shri’, ‘Padma Bhushan’, ‘Dr B. C. Roy National Award’ and ‘Marquis Who’s Who in the World’ recipients.</p>
+            </div>
+        </div>
+    
+      </div>
+    
+      </div>
+    
+      </div>
+    </div>
+    
+      </section>
+    
+      <!-- department end -->
+
+      <!-- register start -->
+
+      <div class="register">
+        <div class="division">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <h2 class="note3">Register today and Get first Appointment!</h2>
+            </div>
+            <div class="col-md-6 col-sm-12 "style="padding-left:140px;">
+              <a href="#" class="app">APPOINTMENT</a>
+            </div>
+          </div>
+        </div>
+      
+        </div>
+
+        <!-- register end -->
+
+        <!-- medical start-->
+
+        <section class="team" id="medical">
+          <div class="members">
+            <h1 class="heading4 animate__animated animate__bounce animate__infinite	infinite">Meet our Medical Specialists</h1>
+            <p class="note4">Our annual Preventive Health Checks are customised to take into consideration your lifestyle and risk factors.<br>Our health checks include comprehensive diagnostics, consultations with accomplished doctors and technology-aided follow-ups.</p>
+          </div>
+        <div class="types">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <img class="doctor1" src="images/slider-1.png" alt="">
+              <h5 class="name">Dr. Addison Alexander</h5>
+              <p class="designation animate__animated  animate__bounceInLeft ">CARDIAC SPECIALIST</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="doctor" src="images/slider-2.png" alt="">
+              <h5 class="name">Dr. Andrew Bert</h5>
+              <p class="designation animate__animated  animate__bounceInLeft">DENTAL SPECIALIST</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="doctor" src="images/slider-3.png" alt="">
+              <h5 class="name">Dr. Adaline Becka</h5>
+              <p class="designation animate__animated  animate__bounceInLeft">CANCER SPECIALIST</p>
+            </div>
+        
+          </div>
+        
+        </div>
+        </section>
+
+        <div class="health">
+          <div class="box">
+            <img class="transparent" src="images/Cama.jpg">
+            <div class="write">
+              <h1 class="note5">Meeting the challenges of an ever-changing healthcare environment.</h1>
+          
+          </div>
+          </div>
+          </div>
+
+          <!-- medical end -->
+
+      <!-- latest news start -->
+     
+      <section class="latest" id="news">
+        <div class="news1">
+          <h1 class="heading5 animate__animated animate__bounce animate__infinite	infinite">Latest News</h1>
+          <p class="note6">Right from the way we have designed our patient rooms to the way we serve you, we have left no stone unturned, <br> ensuring that both, your medical and personal needs are placed above everything else.<br> Backed up with the latest technology including a unique hybrid operating suite, the dedicated team of Cardiac Surgery<br>  doctors has performed a staggering 50,000+ CABG surgeries.</p>
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+             <img class="picture" src="images/spa1.jpg" alt="">
+             <h5 class="info">THE LATEST DIET PILLS FOR MEN IN MIDDLE</h5>
+             <p class="desc">Weight loss supplements have been a hot topic over the last few years. Some of the best weight loss pills may help to reduce absorption and appetite, while others work as a fat burner. </p>
+             <hr>
+            </div>
+      
+            <div class="col-md-4 col-sm-12">
+             <img class="picture" src="images/spa2.jpg" alt="">
+             <h5 class="info">MODERN MATERNITY WARD IN THE HOSPITAL</h5>
+             <p class="desc">The ribbon was cut on a new, exclusive maternity ward at Sheba this week. Women can look forward to receiving a superior standard of medical care and safety, as well as a pleasant birth experience.</p>
+               <hr>
+            </div>
+      
+            <div class="col-md-4 col-sm-12">
+             <img class="picture" src="images/spa3.jpg" alt="">
+             <h5 class="info">UNUSUAL EXPERIMENTS NATING DESIGNERS</h5>
+             <p class="desc">Experimental design projects can be a great way to try something different. They're an excellent alternative to the usual everyday work that's more about about creating work that's familiar and reassuring. </p>
+             <hr>
+            </div>
+      
+          </div>
+      
+        </div>
+      
+      </section>
+
+      <!-- latest news end -->
+
+      <!-- contact us start -->
+
+      <section class="contact-us" id="contact">
+        <div class="corona">
+          <h1 class="heading6 animate__animated animate__bounce animate__infinite	infinite">Contact Us</h1>
+          <p class="note7">Just send us your questions or concerns by starting a new case and we will give you the help you need.<br> Chat with a member of our in-house team.</p>
+      <div class="c_info">
+           <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="icon1">
+              <i class="fa fa-map-marker fa-3x" ></i>
+            </div>
+              <p class="cus">301 The Greenhouse, Custard, <br>Factory, London, E2 8DY.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="icon1">
+              <i class="fa fa-mobile fa-3x"></i>
+              </div>
+              <p class="cus">(M) +44 (0) 123 456 7890 <br>(O) +44 (0) 123 456 7890</p>
+            </div>
+      
+                 <div class="col-md-4 col-sm-12">
+                   <div class="icon1">
+                  <i class="fa fa-envelope fa-3x"></i>
+                </div>
+               <p class="cus">promidas96@gmail.com <br>medcenter@gmail.com</p>
+             </div>
+      
+          </div>
+      </div>
+        </div>
+      
+      </section>
+
+      <!-- contact us end -->
+
+      <!-- maps start -->
+      <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3684.180259949795!2d88.41059221414147!3d22.572360438669772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1639834740364!5m2!1sen!2sin" width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- map end -->
+
+    <!-- footer start -->
+    
+<footer class="footerpart">
+  <div class="container">
+
+          <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+              <div class="social social-icon-color">
+                  <a href="#" class="social-media fb">
+                      <i class="fa fa-facebook fa-2x"></i>
+                  </a>
+                  <a href="#" class="social-media twitter">
+                      <i class="fa fa-twitter fa-2x"></i>
+                  </a>
+                  <a href="#" class="social-media google">
+                      <i class="fa fa-google-plus fa-2x"></i>
+                  </a>
+                  <a href="#" class="social-media pinterest">
+                      <i class="fa fa-pinterest fa-2x"></i>
+                  </a>
+                  <a href="#" class="social-media linkedin">
+                      <i class="fa fa-linkedin fa-2x"></i>
+                  </a>
+                  <a href="#" class="social-media youtube">
+                      <i class="fa fa-youtube fa-2x"></i>
+                  </a>
+              </div>
+              <hr>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12 text-center power ">
+              <p class="text-part">&COPY; 2016 LeadGen is proudly powered by <a class="pagelink" href="http://www.themezaa.com/">ThemeZaa.</a></p>
+          </div>
+
+  </div>
+</footer>
+<!-- city jss -->
+<script type="text/javascript">
+  function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+  }
+</script>  
+            <script type="text/javascript" src="js/script.js"></script> 
+     </body>
+     </html>
